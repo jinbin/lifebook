@@ -6,9 +6,17 @@
 
 不能实践的"知识"不称为知识。反之，学习的时候就要努力把知识应用于实践。
 
+Schedule：  
+周一、三晚跑步，周二晚学习时间
+
 Reading List: 
 
 - Pragmatic Thinking and Learning  
   4.6开始读，到4.11完成。
 - The Ruby Programming Language
   4.6开始读，到4.11完成四章。
+
+
+
+
+
