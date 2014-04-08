@@ -65,3 +65,10 @@ L型和R型思维
   - 写文档的过程比文档本身更重要
 - 以教代学
   - Talk to the duck
+
+从L型到R型：
+
+- 多感官体验
+- Drawing is really about seeing.
+  - 角色扮演
+- R型开路，L型紧跟
