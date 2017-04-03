@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 cal <- function(source){
-  file <- paste("./", source, ".csv", sep="")
+  file <- paste("/Users/jinbin/lifebook/data/income/", source, ".csv", sep="")
   source_data <- read.csv(file)
 
   line <- paste("2017年", source, "次数: ", sep="")

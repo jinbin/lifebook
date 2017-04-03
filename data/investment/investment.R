@@ -10,7 +10,7 @@ stock_list <- stock$stock[stock$date == "2016-12-30"]
 for(x in 1:length(stock$date)){
   if(stock$date[x] == "2016-12-30"){
     sum = sum + stock$share[x] * stock$price[x]
-    .set(h_last_price, keys = gsub(" ", "", stock_list[x]), values = stock$price[x])
+    .set(h_last_price, gsub(" ", "", stock_list[x]), stock$price[x])
   }
 }
 print(paste("2016年年底本金: ", sum, seq=""))
@@ -29,14 +29,14 @@ print(paste("2017年总投入资金: ", add + sum, seq=""))
 #获取每种stock的current_share
 h_current_share = hash()
 for(i in 1:length(stock_list)){
-  .set(h_current_share, keys = gsub(" ", "", stock_list[i]), values = sum(stock$share[stock$stock == stock_list[i]]))
+  .set(h_current_share, gsub(" ", "", stock_list[i]), sum(stock$share[stock$stock == stock_list[i]]))
 }
 
 #获取每种stock的current_price
 h_current_price = hash()
 for(x in 1:length(stock$date)){
   if(stock$date[x] == "N/A"){
-    .set(h_current_price, keys = gsub(" ", "", stock$stock[x]), values = stock$price[x])
+    .set(h_current_price, gsub(" ", "", stock$stock[x]), stock$price[x])
   }
 }
 
