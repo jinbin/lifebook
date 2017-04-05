@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscript
+#!/usr/bin/env RScript
 
 cal <- function(source){
   file <- paste("/Users/jinbin/lifebook/data/income/", source, ".csv", sep="")
