@@ -17,7 +17,7 @@ cal <- function(source){
 
 sum1 = cal("顺风车")
 sum2 = cal("快车")
-sum3 = cal("刷单")
+sum3 = cal("其他")
 
 print("2017年PartTime总收入: ")
 print(sum1 + sum2 + sum3)
