@@ -2,7 +2,7 @@
 
 library(hash)
 
-stock <- read.csv("/Users/jinbin/lifebook/data/investment/股票.csv")
+stock <- read.csv("/Users/jinbin/lifebook/data/investment/stock.csv")
 
 sum <- 0
 h_last_price = hash()
