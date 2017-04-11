@@ -24,7 +24,7 @@ for(x in 1:length(stock$date)){
   }
 }
 print(paste("2017年新增资金: ", add, seq=""))
-print(paste("2017年总投入资金: ", add + sum, seq=""))
+print(paste("目前总投入资金: ", add + sum, seq=""))
 
 #获取每种stock的current_share
 h_current_share = hash()
