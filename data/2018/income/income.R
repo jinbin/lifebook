@@ -1,5 +1,7 @@
 #!/usr/bin/env RScript
 
+target <- 45000
+
 cal <- function(source){
   file <- paste("/Users/jinbin/lifebook/data/2018/income/", source, ".csv", sep="")
   source_data <- read.csv(file)
@@ -15,7 +17,10 @@ cal <- function(source){
   return(sum(source_data$money))
 }
 
-sum1 = cal("income")
+sum = cal("income")
 
 print("2018年PartTime总收入: ")
-print(sum1)
+print(sum)
+print("完成度: ")
+obj <- paste(round(sum / target * 100, 2), "%")
+print(obj)
