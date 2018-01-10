@@ -15,8 +15,7 @@ cal <- function(source){
   return(sum(source_data$money))
 }
 
-sum1 = cal("顺风车")
-sum2 = cal("其他")
+sum1 = cal("income")
 
 print("2018年PartTime总收入: ")
-print(sum1 + sum2)
+print(sum1)
