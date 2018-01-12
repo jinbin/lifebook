@@ -60,13 +60,24 @@ for(i in 1:length(stock_list)){
   }
 }
 
-print(paste("2018年当前持股市值: ", current_sum, seq=""))
+current_value <- current_sum
+print(paste("2018年当前持股市值: ", current_value, seq=""))
 
 for(x in 1:length(stock$date)){
   if(stock$share[x] < 0){
     current_sum = current_sum - stock$share[x] * stock$price[x]
   }
 }
+
+cash <- 0
+for(x in 1:length(stock$date)){
+  if(stock$share[x] < 0){
+     cash = cash - stock$share[x] * stock$price[x]
+  }
+}
+
+print(paste("2018年现金余额: ", cash - add, seq=""))
+print(paste("2018年账户总额(当前持股市值 + 现金): ", cash - add + current_value, seq=""))
 
 print(paste("2018年总收入(持股市值+现金): ", current_sum, seq=""))
 
