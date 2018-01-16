@@ -76,14 +76,11 @@ for(x in 1:length(stock$date)){
   }
 }
 
-print(paste("2018年现金余额: ", cash - add, seq=""))
-print(paste("2018年账户总额(当前持股市值 + 现金): ", cash - add + current_value, seq=""))
-
-print(paste("2018年总收入(持股市值+现金): ", current_sum, seq=""))
+print(paste("2018年净流入: ", add - cash, seq=""))
 
 profit <- current_sum - add - sum
 print(paste("2018年总盈利(亏损): ", profit, seq=""))
 
-growth_rate <- (current_sum - add - sum) / (add + sum) * 100
+growth_rate <- (current_sum - add - sum) / (add + sum - cash) * 100
 print(paste("整体增长(下降)率: ", strtrim(growth_rate, 5), "%", seq=""))
 
